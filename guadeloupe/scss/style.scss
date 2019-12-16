@@ -1,0 +1,51 @@
+/* Scss Document */
+/*VARIABLES*/
+
+$blanc: rgba(255,255,255,1.00);
+
+%gauche{
+	text-align: left;
+	font-size: auto;
+	text-transform: capitalize;
+	color: $blanc;
+	display: block;
+	margin-right: auto;
+	a{
+		margin-right: 1%;
+	}
+}
+
+%droite{
+	text-align: right;
+	font-size: auto;
+	text-transform: uppercase;
+	color: $blanc;
+	display: block;
+	margin-left: auto;
+	a{
+		margin-left: 1%;
+	}
+}
+
+/*SCSS PARTIS 1*/
+
+nav {
+	background-color: rgba(207,207,207,1.00);
+	margin: 0%;
+	padding: 2%;
+	display: block;
+}
+
+.nav-gauche{
+	@extend %gauche;
+}
+
+.nav-droite {
+	@extend %droite;
+}
+
+
+
+
+
+/*SCSS PARTIS 2*/
