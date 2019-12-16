@@ -53,9 +53,10 @@ a{
 }
 
 .divApropos{
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-bottom: 30px;
+    min-height: 700px;
 }
 .absolue{
     position: sticky;
@@ -70,18 +71,18 @@ a{
     text-transform: uppercase;
     text-align: center;
     font-size: 2rem;
-    padding-top: 4%;
+    padding-top: 30px;
     color: #1b242f;
     font-weight: 700;
 }
 
 .divSkills{
-    min-height: 100vh;
     background-color: #eee;
+    padding-bottom: 30px;
 }
 
 .divProjets{
-    min-height: 100vh;
+    padding-bottom: 30px;
 }
 
 
@@ -240,6 +241,9 @@ a{
 @media (max-width: 768px) {
     .ulNav a {
         font-size: 20px;
+    }
+    .divApropos{
+        min-height: initial;
     }
 }
 @media (max-width: 320px) {
