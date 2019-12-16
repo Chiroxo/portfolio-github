@@ -1,1 +1,236 @@
+<!DOCTYPE html>
 
+<html>
+
+<head>
+    <title>Nathan DI RUGGIERO</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="background.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".zero").click(function () { /*select class that triggers scroll*/
+                $('html, body').animate({
+                    scrollTop: $(".divApropos").offset().top /*class you want to scroll to!!*/
+                }, 1000); /*animation time length*/
+            });
+            $(".one").click(function () { /*select class that triggers scroll*/
+                $('html, body').animate({
+                    scrollTop: $(".divApropos").offset().top /*class you want to scroll to!!*/
+                }, 1000); /*animation time length*/
+            });
+            $(".two").click(function () {
+                $('html, body').animate({
+                    scrollTop: $(".divSkills").offset().top
+                }, 1000);
+            });
+            $(".three").click(function () {
+                $('html, body').animate({
+                    scrollTop: $(".divProjets").offset().top
+                }, 1000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="divBackground">
+        <div class="night">
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+        </div>
+    </div>
+    <div class="divEntete">
+
+        <p class="pEnteteTitle">Bonjour, </p>
+        <p class="pEntete">je suis <span>Nathan DI RUGGIERO.</span></p>
+        <p class="pEntete">Bienvenue sur mon portfolio en ligne</p>
+        <button class="btnEntete"><a class="aMenu zero" href="#Apropos">En savoir plus</a></button>
+
+    </div>
+
+
+    <div class="divMain">
+        <div class="absolue">
+            <div class="divMenu">
+                <nav>
+                    <u1 class="ulNav">
+                        <li>
+                            <a class="aMenu one">A propos</a>
+                        </li>
+                        <li><a class="aMenu two">Competences</a></li>
+                        <li><a class="aMenu three">Projets</a></li>
+                    </u1>
+                </nav>
+            </div>
+        </div>
+
+        <div class="divApropos" id="Apropos">
+            <p class="pTitle">A propos</p>
+            <div class="divflex">
+                <div class="divImg">
+                    <img src="img/apropos.svg">
+                </div>
+                <div class="divAproposTxt" data-aos="fade-down" data-aos-duration="1500">
+                    <p class="pTitleTxt">Qui suis-je ?</p>
+                    <p class="pAproposTxt">Je suis <strong>Nathan DI RUGGIERO</strong> étudiant en deuième année de DUT
+                        Informatique à l'IUT d'Orsay de l'université Paris-Saclay.
+                        Depuis tout jeune je suis passioné d'infomatique. J'ai été attiré dans ce domaine par sa
+                        capacité à avoir une liberté de
+                        conception et de développement. Mais également par l'évolution constante des technologies qui
+                        nous pousse à en apprendre toujours plus sur celles-ci.</p>
+                    <button class="btnCV"><a class="aProjet" href="cv.pdf" target="_blank">voir mon CV</a></button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="divSkills" id="Competences">
+            <p class="pTitle">Competences</p>
+
+            <div class="divflex">
+
+                <div class="divCompetencesTxt">
+                    <div class="divComp">
+                        <div data-aos="fade-down-right" data-aos-duration="1500" data-aos-delay="1000"
+                            class="divCompContent">
+                            <p class="pTitleTxt">Web</p>
+                            <img class="imgComp" src="img/html.svg">
+                            <h4>HTML</h4>
+                            <img class="imgComp" src="img/css.svg">
+                            <h4>CSS</h4>
+                            <img class="imgComp" src="img/php.svg">
+                            <h4>PHP</h4>
+
+                        </div>
+                        <div data-aos="fade-down-left" data-aos-duration="1500" data-aos-delay="1000"
+                            class="divCompContent">
+                            <p class="pTitleTxt">Base de données</p>
+                            <img class="imgComp" src="img/sql.svg">
+                            <h4>SQL</h4>
+                        </div>
+                    </div>
+
+                    <div class="divComp">
+                        <div data-aos="fade-down-right" data-aos-duration="1500" class="divCompContent">
+                            <p class="pTitleTxt" class="">Orientée Objet</p>
+                            <img class="imgComp" src="img/java.svg">
+                            <h4>JAVA</h4>
+                            <img class="imgComp" src="img/c.svg">
+                            <h4>C++</h4>
+                        </div>
+
+
+                        <div data-aos="fade-down-left" data-aos-duration="1500" class="divCompContent">
+                            <p class="pTitleTxt">Outils</p>
+                            <img class="imgComp" src="img/virtualbox.svg">
+                            <h4>VirtualBox</h4>
+                            <img class="imgComp" src="img/intel.svg">
+                            <h4>Assembleur intel 8086</h4>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="divImg">
+                    <img src="img/competences.svg">
+                </div>
+            </div>
+        </div>
+
+        <div class="divProjets" id="Projets">
+            <p class="pTitle">Projets</p>
+
+            <div class="divProjetContent">
+                <div class="divProjetImg" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                    <img class="imgProjet" src="img/guadeloupe.png">
+                </div>
+                <div class="divProjetTxt" data-aos="fade-down" data-aos-duration="1000">
+
+                    <div class="divProjetBalise">
+                        <button class="btnProjet">HTML</button>
+                        <button class="btnProjet">CSS</button>
+                    </div>
+                    <p class="pProjetTxt">Ce premier projet est un site touristique réalisé pour un projet demander lors
+                        de ma formation. Ce projet à été réqliser en binhôme.
+                        Nos avions comme sujet de faire un site sans base de données sur le thème que l'on voulais. Nous
+                        avons donc choisis la Guadeloupe.
+                        Ce projet à été développer à l'aide des langages HTML et CSS principalement.
+                    </p>
+
+                    <button class="btnCV"><a class="aProjet" href="guadeloupe/Index.html" target="_blank">Voir le
+                            projet</a></button>
+
+
+                </div>
+            </div>
+
+            <div class="divProjetContent">
+                <div class="divProjetImg" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                    <img class="imgProjet" src="img/portfolio.png">
+                </div>
+                <div class="divProjetTxt" data-aos="fade-down" data-aos-duration="1000">
+
+                    <div class="divProjetBalise">
+                        <button class="btnProjet">HTML</button>
+                        <button class="btnProjet">CSS</button>
+                        <button class="btnProjet">JAVA SCRIPT</button>
+                    </div>
+                    <p class="pProjetTxt">Ce premier projet est le premier projet que j'ai réaliser seul. Afin d'obtenir ce résultat j'ai du effectuer divers recherche qui m'ont permises de trouver un design et une structure qui me plaise.
+                        Suite à cela j'ai donc développer ce site en HTML puis fait la gestion du design en CSS.
+                        J'ai utilisé le JavaScript afin d'avoir des animations pour améliorer l'apparence et rendre ce site dynamique. 
+                    </p>
+
+                    <button class="btnCV"><a class="aProjet" href="portfolio.html" target="_blank">Voir le
+                            projet</a></button>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+<footer>
+    <div class="divFooter">
+        <p class="copyright"><img class="linkedin" src="img/smartphone.svg">07.61.82.64.91</p>
+        <a class="footerItem" href="https://www.linkedin.com/in/nathan-di-ruggiero-6b7038172" target="_blank"><img
+                class="linkedin" alt="linkedin" src="img/linkedin.svg"></a>
+    </div>
+
+    <p class="copyrightDiv">NATHAN DI RUGGIERO <span _ngcontent-serverapp-c1="">©2019</span></p>
+</footer>
+</html>
